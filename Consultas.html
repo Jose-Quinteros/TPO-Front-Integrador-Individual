@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="Css/Consultas.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+  <div id="menu_contenedor"> <!-- Estamos haciendo un menu con imagen de vinculo-->
+    
+    <header>
+        <div id="menu">
+            <ul>
+                <li id="logo">
+                    <a href="index.html">
+                        <img src="img/vrd.png" alt="loco de whatsapp" width="50px" height="50px">
+                    </a>
+
+                </li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="Servicios.html">Servicios</a>
+                </li><li>
+                    <a href="Contactos.html">Contactos</a>
+                </li><li>
+                    <a href="Consultas.html">Consultas</a>
+                </li>     
+            </ul>
+
+        </div>
+        <main> <!-- Main representa el contenido principal del sitio --> <!-- Vamos a dividir la pagina para la imagen, por lo que vamos a establecer una capa-->
+            <div class="text"> <!-- Establecemos una clase, lo ucla lo podemos utilizar más adelante-->
+                <h1 class="animate__animated animate__zoomInDown">Servicio Tecnico IndeX</h1>
+                <p>
+                    Conoce una herramienta más a tu solución 
+                </p>
+               
+            </div>
+
+            <div class="imagen">
+                <img src="img/vrd.png" alt="cerca del boton" width="100px" height="100px">
+
+            </div>
+        </main>    
+    </header>
+</div>
+   
+    
+    <div><h2 class="titulo_consulta">Puedes enviarnos tus Consultas:</h2>
+    
+    <p>Los campos obligatorios van seguidos de <strong> <abbr title = "required"> * </abbr> </strong>.</p></div>
+    
+    
+    <form class="consulta">
+        <!-- <h3>Forma de pago</h3> -->
+
+
+        <fieldset>
+            <legend>Completa tu Consulta</legend>
+
+            <ul>
+                <li>
+                    <label for="nombre" class="control">Ingrese su Nombre: </label>
+                    <input class="boton" type="text" id="nombre" name="name" placeholder="Ingrese su Nombre">
+                    <abbr title="required" aria-label="required">*</abbr>
+                    <!--El párrafo de la parte superior establece una regla para los elementos que son obligatorios. La regla ha de incluirse antes de usarse para que tanto los usuarios videntes como los usuarios que utilizan tecnologías de asistencia y lectores de pantalla, sepan lo que significa antes de encontrar un elemento obligatorio. Cuando un usuario vidente pase el ratón por encima, debería aparecer una etiqueta de «obligatorio», lo cual se logra con el uso del atributo title -->
+                </li>
+                <br>
+                <li>
+                    <label for="mail" class="control">Ingrese su Correo Eléctronico: </label>
+                                      
+                    <input class="boton" type="mail" id="mail" name="mail" placeholder="Ingrese su Correo Electronico">
+                    <abbr title="required" aria-label="required">*</abbr>
+                </li>
+                <br>
+               
+                <li>
+                    <label for="date" class="control">
+                      <span>Fecha de Consulta:</span>
+                     
+                      
+                    </label>
+                    <input class="boton" type="date" id="date" name="expiration">
+                    <strong><abbr title="required">*</abbr></strong>
+                </li>
+
+
+
+                
+                <br>
+                <li>
+                    <label for="Interes" class="control">Interés: </label>
+                </li>
+                <p>
+                    <input class="boton" type="radio" name="size" id="size_1" value="small">
+                    <label for="size_1">Hardware</label>
+                  </p>
+                  <p>
+                    <input class="boton" type="radio" name="size" id="size_2" value="medium">
+                    <label for="size_2">Software</label>
+                  </p>
+                  <p>
+                    <input class="boton" type="radio" name="size" id="size_3" value="large">
+                    <label for="size_3">Programas</label>
+                  </p>
+                <br>
+                <li>
+                    <label for="tipo" class="control">
+                      <span>Tipo:</span>
+                    </label>
+                    <select id="tipo" name="tipo_consulta" class="boton">
+                      <option value="Scc">Servicio</option>
+                      <option value="Asesor">Asesoramiento</option>
+                      <option value="Info">Información</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+                <label for="consulta" class="control">Realice su consulta: </label>  
+                
+                 <textarea id="mensaje" name="Mensaje" placeholder="Escriba su consulta aquí..."></textarea>
+                 <abbr title="required" aria-label="required">*</abbr>
+                </li>
+                <br>
+                <br>
+                <button type="submit">Envíe su Consulta</button>
+                <!--Colocamos el elemento Button, un Botón para permitir que el usuario envíe su consulta cuando haya terminado de completar su formulario-->
+            </ul>
+    
+    
+            </ul>
+            
+          </fieldset>
+
+          
+
+    </form>
+
+
+    <!-- Se utiliza una etiqueta fieldset, anidando un conjunto de elementos-->
+    
+</body>
+<footer>
+    <div class="container-footer">
+        <div class="copyright">
+
+            Copyright &copy; 2021
+            <a href="http://www.servpcweb.com" target="_blank">IndeX</a>
+            Todos los Derechos Reservados.&nbsp;&nbsp;&nbsp;
+
+        </div>
+
+        <div class="information">
+            <a href="#">Información Compañia</a> |
+            <a href="#">Privacion y Politica</a> |
+            <a href="#">Terminos y Condiciones</a>
+
+        </div>
+
+    </div>
+</footer>
+</html>
